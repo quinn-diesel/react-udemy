@@ -23,10 +23,10 @@ jsx: subset of js that looks like html that is actually js. webpack and babel ar
 - get compiled but it's really ugly.
 - JSX is more readabl overall
 
-8 - // when we write Es6 we have access to javascript code. all the code that is written is silo'd.
-// code that is declared in other models unless it is explicity said.
-// you can't make reference to any variables that are in that file
-// you have to explicity say what you want to have access to.
+8 -  when we write Es6 we have access to javascript code. all the code that is written is silo'd.
+ code that is declared in other models unless it is explicity said.
+ you can't make reference to any variables that are in that file
+ you have to explicity say what you want to have access to.
 
 9 - React knows how to
 - to take a component and render it to the DOM you have to use a separate library called reactDOM
@@ -36,3 +36,13 @@ jsx: subset of js that looks like html that is actually js. webpack and babel ar
 - instantiate components before rendering to the DOM
 - when you write DIV in JSX it will write it as a class and turn it into an instance for us
 - < /> now passes from a class to a instance
+
+11 - whenever we have to make a component, we have to wrap it in JSX tags
+- the react DOM takes a seconda argument
+- this is a target DOM element
+- App, and then insert into the HTML document
+- most react apps you are going to load the div with something with class container
+- root node of the entire react active
+- everything will be nested into the root element
+- new es syntax
+- => fat era
