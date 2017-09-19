@@ -59,4 +59,7 @@ jsx: subset of js that looks like html that is actually js. webpack and babel ar
   - nesting is to have one compononent that will have multiple components in it
   - there will be a lot going on but it's about folding it all up into itself
 
-13 - 
+13 - youtube api
+- two step process: we need to get the youtube key and password
+- API key to identify ourselves
+- install a small package to help make the seaching process easy
