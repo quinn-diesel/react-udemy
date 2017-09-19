@@ -46,3 +46,17 @@ jsx: subset of js that looks like html that is actually js. webpack and babel ar
 - everything will be nested into the root element
 - new es syntax
 - => fat era
+
+12 - component is a function or object that returns some sort of html
+  - might have a single component that does each aspect of the
+  - react knows how to render a lot of components all at once really fast
+  - the idea is to spread out different component across the app
+  - it's a somewhat arbitrary way of doing the components
+  - this will be for me to decide
+  - EXAMPLE: a search bar will be one compononent all by itself
+  - one for the vidoe and the title and description
+  - another one that represents the rest
+  - nesting is to have one compononent that will have multiple components in it
+  - there will be a lot going on but it's about folding it all up into itself
+
+13 - 
