@@ -134,3 +134,48 @@ jsx: subset of js that looks like html that is actually js. webpack and babel ar
 ----- SECTION 2 - AJAX REQUESTS WITH REACT ------
 
 21 - Youtube Search Response
+- once we get the information from the API we need to get the return response
+- the question becomes about what do we use to grab the information
+- the video detail and list will also be using
+- DOWNWARDS DATA FLOW - only the parent should be able to get the information
+- for now it's about using the most parent component that we are going to use to get the information. the APP is the parent
+- the APP will be what is responsible for fetching the data
+
+21 - Refactoring Functional Components to Class components
+- we needs to set the state in the app
+- the constructor will run when there is a change, which will run the YTSearch with the new list of videos
+- notice that the data/videos function where the key and value are the same things
+- there is a bit of es6 syntax that can be use used
+
+23 - props
+- we now have a search term that we can access the data that we need to get out to make what we need
+- start with the video list
+- there is the need for state
+- we are using bootstrap with React so all the normal classes can be called
+- here is the critical point to remember.
+1. Make the component in the file.
+2. Make sure to export the component so it can be used elsewhere.
+3. Import to the main app.
+4. Call the component where you need it in the div organisation.
+- need to pass parent information to the child component -> define the property in the JSX tag
+- passing information from App to the render is a PROP.
+- anytime the app re-render the videolist will get the new list that we are using
+- sometimes when the request is still completing we might see a 0 with what is going on
+- class based component props is available anywhere with this.props
+- whenever refactor to a function component to a class component props needs to be changed from props to this.props
+
+24 - Building Lists with Map
+- try to use in built in iterators that are going to be used
+- an idea might be to use Map
+- the idea is to array.map that will automatically iterate over it
+- array.map(function (number) { return number * 2}) will return an array that is twice what is happening
+- you can add divs with JSX and get a list that we want
+- react is really intelligent about arranging an array of elements that React that will be a list that can be done inside of the UL
+
+25 - List Item Keys
+- React can be a bit too smart when rendering an array of items and building a list
+- there is a lot of programming that is being used to have it's information updated
+- if you have an id then you can update the correct part of the deck of cards
+- React builds a list when it has an ID so it knows where to go and update
+- think about where the element is in the deck of cards
+- the response has an e-tag that is a long string of characters that is a key that be used in the videoitems array
