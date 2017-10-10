@@ -63,3 +63,34 @@ jsx: subset of js that looks like html that is actually js. webpack and babel ar
 - two step process: we need to get the youtube key and password
 - API key to identify ourselves
 - install a small package to help make the seaching process easy
+- the package json file is the list of all the packages that are going to use what we need
+
+14 - export statements
+- exporting models, classes and state:
+- we need to make sure the user can see the div
+- react components can see other components. we need to get it into index.js
+- remember all the files are silo'd from each other
+- we only want to export a subset of code we want to work from
+- it is very important to export each of the files that we have
+- we have to give a file reference when we are importing
+- created the component, exported it from the file, then imported it to the index and then rendered the search bar in the App file
+
+15 - creating a component with an es6 flash
+- a class component is used for internal record keeping
+- Because users are going to be typing into the input we want to register what people are typing
+- right now it's a functional component
+- class component - object with a set of criteria
+- functional component to a class based component
+
+
+16 - handling user errors
+- first declare event handler - run whenever the event occurs
+- pass the event to the monitor
+- onInputChange or handleChange, you should be able to tell the purpose of the method
+- all events that get triggered, they are called with the event handler (event)
+- this describes the context that is happeneing, can use the event object to get access to the event output
+- input with an event handler, specifically we are calling the onChange property
+- in the class we define another element
+
+17 - introdcution to state
+- 
