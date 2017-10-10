@@ -92,5 +92,17 @@ jsx: subset of js that looks like html that is actually js. webpack and babel ar
 - input with an event handler, specifically we are calling the onChange property
 - in the class we define another element
 
-17 - introdcution to state
-- 
+17 - introduction to state
+- state: plain javascript object that is used to record and respond to user-based events
+- each class has it's own state object
+- each time the state is changed it forces the render to change, and the render function is re-run. it will apply to all the children
+- you have to intiliase the state object
+- set the state to a plain object
+- all js functions have a constructor, this is called automatically anytime the instance is created, the function is called anytime there is a new instance of the SearchBar
+- the constructor function is used to set up state and other variables
+- component itself has it's own parent method
+- super will call the parent class with the idea of super
+- the object you pass to the this.state will be what you want see in the search term
+- as the user starts typing in the input, we want it to be the value of the input
+
+18 - state continued
