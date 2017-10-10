@@ -106,3 +106,31 @@ jsx: subset of js that looks like html that is actually js. webpack and babel ar
 - as the user starts typing in the input, we want it to be the value of the input
 
 18 - state continued
+- state is a plain js object that exists on any component that is a class based component. each one will have it's own copy of state
+- you will set the state with this.state. you can use any property name for the term
+- updating the state is different from updating the state
+- constructor function (this.state) will be the only time you see it.
+- it will usually this.setState({ object you want to manipulate })
+- use the method to inform react about what is going on
+- whenever we change our state, it updates out updated method in the DOM
+- this is the full circle of the state
+- whenever you want to update a component you want to use state
+
+19 - controlled components
+- only update state with this.setState
+- the only time it is done manually is in the constructor
+- control field is the form element that is set by the state
+- whenever our input change it tells the input what the state should be
+- a controlled component is change by the state. this is only changed when the state is changed
+- when the setState makes a re-render this changes the above value.
+- the idea is the first value is nothing, then when the user types something it triggers the setState which changes the value of the input
+- this is how data is changed, there is no imperative form of data.
+- KEY: THE VALUE OF THE INPUT IS EQUAL TO THE STATE
+- it allows to preset elements.
+
+20 - breather and review
+- remember app is a functional component because it doesn't have a state based component
+
+----- SECTION 2 - AJAX REQUESTS WITH REACT ------
+
+21 - Youtube Search Response
