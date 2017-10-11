@@ -179,3 +179,27 @@ jsx: subset of js that looks like html that is actually js. webpack and babel ar
 - React builds a list when it has an ID so it knows where to go and update
 - think about where the element is in the deck of cards
 - the response has an e-tag that is a long string of characters that is a key that be used in the videoitems array
+
+
+26 - Video List Items
+- {video} this is the same as const video = (props) =>
+- create a new variable with ES6 syntax
+- {referencing variable}
+
+27 - Detail component
+- Question to ask for new component: Does the component need to maintain any kind of state?
+- video details needs to have
+- we can craft our own video URL id
+-   const url = 'https://www.youtube.com/embed' + videoId;
+- this is creating the youtube video player in the application we are using
+- ${videoId}'  = +  videoId; helps when making the string with interpolation
+- iframe you just have to provide a source and place whatever content you need
+
+28 - Handling Null props
+- the app will always try to automatically render the search that we are looking for
+- in the videodetail we make a check to see if there is no video. that way there won't be a rendering problem on the first load
+- if(!video) = if there is no video then return(exit) and render nothing
+- this needs to be the first thing on the list that I am doing
+
+29 - Video Selection
+- 
