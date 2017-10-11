@@ -202,4 +202,78 @@ jsx: subset of js that looks like html that is actually js. webpack and babel ar
 - this needs to be the first thing on the list that I am doing
 
 29 - Video Selection
-- 
+- want to have an ajax spinner on a high level component
+- we want to give the user the ability to click on a video and see what is going on
+- we will have a callback that will be in app that will be called when the videolist is clicked
+- first pass the video into the videoDetail
+- created the selectedVideo to start at Null
+- at the same time as the loading the ajax request is sent to get the video
+- we select the first video to playe
+- then there is a re-render with AJAX and we get the first video
+- onVideoSelect = {selectedVideo => this.setState({selectedVideo})} function which defines the selectedVideo in the app state
+- passing a function which manipulates another function
+- we are now taking the function to go BACK into the video list
+- this is going back through the list of components together so each items can work together
+- this is calling parent downwards to the child. passing callbacks like this is ok to pass information back and forth
+
+30 - Styling with CSS
+- there is still plenty of work to do, but this is just normal CSS
+- :hover is a pseudo code that can be used for the hover of something
+
+31 - adding in the search bar
+- it's all about tracing how the events are going to work
+
+32 - Throttling the search terms
+- we want to try and kick off what people are searching in better way
+- we want to make use of a functional library called lodash
+- throttle useing debouce (this is in the 30 days of js coding)
+- debounce creates a new function that will only be called once every 300 ms
+- this is a great way to throttle what people are using
+
+33 - React WrapUp
+- this is the first React application
+- Concept 1: class based vs functional: class is used whenever there is state in the component. functional is used when there is the same functional
+- Concept 2: set the state inside of the constructor
+- whenever we change the state everything re-renders
+- Import and export statements - this is when we require files in and what we want to use
+- Wherever we use the library we just get the name of the library
+- How often we use callbacks - we only used a few
+- Redux themed applications there are less callbacks in the confusing fashion
+- Callbacks exist in order to parent-children communication
+- whenever we change searchbar state it only changes the state for that specific component
+- when we are talking about state it is very component level. there is always application level.
+
+
+----- SECTION 3 - MODELING APPLICATION STATE ------
+
+34 - Intro
+- Redux is a very broad topic across lots of things
+- The idea is how to model Redux with what is going on. Build something on what we are doing
+- The goal is to make everything as clear as possible
+
+35 - What is the main difference?
+- Redux is a predictable state framework
+- There are two parts to displaying books
+- Back-end data you have a list of books and the currently selected books
+- The views are all the items that we have made
+- You use the data and the views and merge them together to make an applications
+
+36 - Redux is the data contained in the Back-end
+- state container - collection of all the data that describes the books
+- react really shows the views that the user will interact with
+- it is about centralising the data into a single object.
+- usually there are collections of information
+- the centre object is the Redux state - the data of the applications
+- First example of FLUX - counter:
+- Data: current counter the views are the current count and the number change
+- Redux will just keep track of the current counter. This is the state of the application.
+
+37 - Even more Redux EXAMPLE
+- Having the best sense of state one of the most important things happening
+- Tinder is a great example
+- We need to have a list of information
+- Everything will sit in one single object that is the application state
+
+----- SECTION 4 - PUTTING REDUX TO PRACTICE ------
+
+39 - Reducer
