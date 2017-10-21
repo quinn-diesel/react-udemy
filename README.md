@@ -277,3 +277,18 @@ jsx: subset of js that looks like html that is actually js. webpack and babel ar
 ----- SECTION 4 - PUTTING REDUX TO PRACTICE ------
 
 39 - Reducer
+- what is a reducer?
+- function that returns a piece of the application state
+- becuase there can be many different forms of state there can be many different statements
+- one state for the full list of books
+- one state for active books that have been
+- there is a reducer produce the value of the state
+- the only thing the reducer is worth is the value and key of the state
+- we should just get an array of objects
+
+40 - ReactRedux
+- this is used to link react and redux together so the information can be pulled from the redux back-end to the react front-end
+- we are going to create a container
+- container is a react component that is connected to the state managed by redux
+- this is the BRIDGE that will link the redux back-end and the react front-end
+- 
