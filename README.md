@@ -291,4 +291,9 @@ jsx: subset of js that looks like html that is actually js. webpack and babel ar
 - we are going to create a container
 - container is a react component that is connected to the state managed by redux
 - this is the BRIDGE that will link the redux back-end and the react front-end
+
+41 - Containers Continued
+- a container is a component that has direct access to the states that are created in redux
+- that is the only way to get access to a component that is in Redux
+- we want the most parent component to care about the state and the list of books
 - 
